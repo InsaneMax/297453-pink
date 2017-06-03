@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a><img class="pink-logo" src="#" width="" height="" alt="Логотпип сайта"></a>
+      <ul class="main-nav-list">
+        <li class="main-nav-list__item"><a>Главная</a></li>
+        <li class="main-nav-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav-list__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
+      </ul>
+    </nav>
+    <button class="btn  btn--header-nav">Меню</button>
+  </header>
+  <main class="main-content">
+    <div class="main-content__for-download">
+      <a class="btn  btn--download" href="#">Скачать приложение</a>
+      <a class="main-content__app  main-content__app--ios" href="#">iOS</a>
+      <a class="main-content__app  main-content__app--android" href="#">Android</a>
+      <a class="main-content__app  main-content__app--windows" href="#">Windows</a>
+    </div>
+  <div class="main-text  main-text--inclined-block">
+    <p class="main-text__title">Устали от мегаполиса, нам есть, что предложить!</p>
+  </div>
+  <div class="appeal">
+    <div class="appeal__item plus">
+      <h2 class="plus__title">Поднимает настроение</h2>
+      <p class="plus__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+    </div>
+    <div class="appeal__item  plus">
+      <h2 class="plus__title">Меняет мир вокруг</h2>
+      <p class="plus__text">Сделайте снимаок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    </div>
+    <div class="appeal__item  plus">
+      <h2 class="plus__title">Заводит новых друзей</h2>
+      <p class="plus__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+    </div>
+  </div>
+  <section class="comments comments--slider">
+    <blockquote class="comments__text  comments__text--first">
+      <cite class="comments__author">Николай Петров</cite>
+      <p class="comments__text">Это приложение перевернуло мой мир и позволило по-новом взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+    </blockquote>
+  </section>
+  <section class="comments">
+    <blockquote class="comments__text  comments__text--second">
+      <cite class="comments__author">Иван Новиков</cite>
+      <p class="comments__text">Сейчас это приложение я смело могу назвать своим любимым. Множество интересных фильтров, оптимальное количество настроек, постоянные обновления инструментов и новых фильтр-паки. Плюс ко всему, в PINK есть хорошая социальная составляющая — вы можете публиковать свои снимки в так называемых «гридах».</p>
+    </blockquote>
+  </section>
+  <section class="comments">
+    <blockquote class="comments__text  comments__text--third">
+      <cite class="comments__author">Илона Давыдова</cite>
+      <p class="comments__text">Настоящая фотолаборатория у вас в кармане. Можно «смешивать» текстуры, фильтры и эффекты и получать действительно классный «коктейль». Пространства для экспериментов тут более чем достаточно, поэтому могу рекомендовать это приложение всем, кто любит нестандартные снимки и обладает большим чувством любопытства.</p>
+    </blockquote>
+  </section>
+  <div class="rate rate--slider">
+    <table class="tariffs">
+      <tr class="tariffs__head">
+        <th class="tariffs__name">Standart 3.99 USD</th>
+<!--           <th class="tariffs__name"></th>
+  <th class="tariffs__name"></th> -->
+</tr>
+<tr class="tariffs__feature">
+  <td class="tariffs__cell">Розовый фильтр</td>
+<!--           <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td> -->
+        </tr>
+        <tr class="tariffs__feature">
+          <td class="tariffs__cell">Смайлики</td>
+<!--           <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td> -->
+        </tr>
+        <tr class="tariffs__feature">
+          <td class="tariffs__cell">Комментарии</td>
+<!--           <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td>
+          <td class="tariffs__cell"></td> -->
+        </tr>
+      </table>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="contacts">
+      <b class="contacts__wanna-ask">Остались вопросы?<br>Свяжитесь с нами!</b>
+      <ul class="contacts__list">
+        <li>Звоните
+          <p class="contacts__phone">+7(812)555-66-66</p>
+        </li>
+        <li>Пишите
+          <p class="contacts__mail"><a href="#">mail@htmlacademy.ru</a></p>
+        </li>
+        <li>Приезжайте в гости
+          <p class="contacts__adress">Ул.Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+    </div>
+    <div class="map"></div>
+  </footer>
+</body>
 </html>

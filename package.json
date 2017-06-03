@@ -4,15 +4,31 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
+<<<<<<< HEAD
     "@htmlacademy/editorconfig-cli": "1.x",
     "gulp-less": "^3.3.0"
+=======
+    "autoprefixer": "6.7.x",
+    "browser-sync": "2.18.12",
+    "gulp": "3.9.1",
+    "gulp-less": "3.3.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.4.0",
+    "@htmlacademy/editorconfig-cli": "1.x"
+>>>>>>> b23bd27d0858eae08b73d121f0cd0445c3322f0b
   },
   "scripts": {
-    "test": "editorconfig-cli"
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
-    "*.json"
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
   ],
   "engines": {
     "node": "6.10"
