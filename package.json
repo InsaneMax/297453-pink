@@ -5,9 +5,12 @@
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@htmlacademy/editorconfig-cli": "1.x",
     "gulp-less": "^3.3.0"
 =======
+=======
+>>>>>>> b23bd27d0858eae08b73d121f0cd0445c3322f0b
     "autoprefixer": "6.7.x",
     "browser-sync": "2.18.12",
     "gulp": "3.9.1",
