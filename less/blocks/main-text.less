@@ -1,10 +1,18 @@
 .main-text {
   background-color: @white;
   color: @blue;
+  text-align: center;
 }
 
 .main-text--inclined-block {
   .line(24px; 24px;);
   .container();
   font-weight: lighter;
+}
+
+@media @tablet-widths {
+
+  .main-text__title {
+    .line(40px; 50px;);
+  }
 }
