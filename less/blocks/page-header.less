@@ -1,13 +1,28 @@
 .page-header {
+  position: relative;
   background-color: @blue;
   color: @white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50% 0;
+  background-size: cover;
+  height: 465px;
+  min-width: 320px;
 }
 
-.page-header--hand {
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.page-header__pic {
+  position: absolute;
+  bottom: 0;
+}
+
+@media @tablet-widths {
+
+  .page-header {
+  height: 730px;
+  }
+  .page-header__pic {
+    left: 15%;
+    width: 470px;
+    height: 550px;
+  }
 }

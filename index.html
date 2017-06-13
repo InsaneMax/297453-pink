@@ -6,42 +6,52 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header class="page-header  page-header--hand">
-    <nav class="main-nav">
-      <a><img class="pink-logo" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Логотпип сайта"></a>
-      <ul class="main-nav-list">
-        <li class="main-nav-list__item"><a>Главная</a></li>
-        <li class="main-nav-list__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav-list__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
-      </ul>
-      <button class="btn  btn--header-nav">Меню</button>
+  <header class="page-header">
+    <nav class="main-nav  main-nav--open">
+      <div class="main-nav__wrap">
+        <a><img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Логотпип сайта"></a>
+        <ul class="main-nav-list">
+          <li class="main-nav-list__item"><a>Главная</a></li>
+          <li class="main-nav-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
+        </ul>
+        <button class="btn  btn--header-nav">Меню</button>
+      </div>
     </nav>
+    <img class="page-header__pic" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="">
   </header>
   <main class="main-content">
-    <div class="main-content__for-download">
-      <a class="btn  btn--download" href="#">Скачать приложение</a>
-      <a class="main-content__app  main-content__app--ios" href="#">iOS</a>
-      <a class="main-content__app  main-content__app--android" href="#">Android</a>
-      <a class="main-content__app  main-content__app--windows" href="#">Windows</a>
-    </div>
+    <section class="promo">
+      <div class="promo__wrap">
+        <a class="btn  btn--download" href="#">Скачать приложение</a>
+        <div class="promo__container">
+          <a class="promo__app  promo__app--ios" href="#">iOS</a>
+          <a class="promo__app  promo__app--android" href="#">Android</a>
+          <a class="promo__app  promo__app--windows" href="#">Windows</a>
+        </div>
+        <p class="promo__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
     <div class="main-text  main-text--inclined-block">
       <p class="main-text__title">Устали от мегаполиса, нам есть, что предложить!</p>
     </div>
     <div class="appeal">
-      <div class="appeal__item plus">
-        <h2 class="plus__title">Поднимает настроение</h2>
-        <p class="plus__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+      <div class="appeal__wrap">
+        <div class="appeal__item  plus">
+          <h2 class="plus__title">Поднимает настроение</h2>
+          <p class="plus__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        </div>
+        <div class="appeal__item  plus">
+          <h2 class="plus__title">Меняет мир вокруг</h2>
+          <p class="plus__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="appeal__item  plus">
+          <h2 class="plus__title">Заводит новых друзей</h2>
+          <p class="plus__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <div class="appeal__pic"></div> <!-- временный блок для картинки -->
       </div>
-      <div class="appeal__item  plus">
-        <h2 class="plus__title">Меняет мир вокруг</h2>
-        <p class="plus__text">Сделайте снимаок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="appeal__item  plus">
-        <h2 class="plus__title">Заводит новых друзей</h2>
-        <p class="plus__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-      <div class="appeal__pic"></div> <!-- временный блок для картинки -->
     </div>
     <section class="comments comments--slider">
       <blockquote class="comments__block  comments__text--first">

@@ -1,3 +1,29 @@
 .main-nav {
-  .container-mob();
+  height: 65px;
+  background-color: rgba(0,0,0,0.1)
+}
+
+.main-nav__wrap {
+  position: relative;
+  .container();
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+@media @tablet-widths {
+
+  .main-nav {
+  height: 110px;
+  background-color: rgba(0,0,0,0.1);
+  }
+  .main-nav__logo {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  }
+
 }
