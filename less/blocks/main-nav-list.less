@@ -1,11 +1,28 @@
 .main-nav-list {
   .null();
+  display: none;
   a {
     text-decoration: none;
     color: @white;
     .line(18px; 32px;);
     font-weight: bold;
-    text-transform: uppercase;
-    display: none;
   }
 }
+
+@media @desktop-widths {
+
+
+  .main-nav-list {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    a {
+       .line(18px; 18px;);
+        font-weight: normal;
+    }
+  }
+
+
+
+}
+

@@ -11,11 +11,15 @@
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
   .null();
   margin-top: 30px;
 }
 
 .contacts__list li {
+  width: 245px;
+  padding: 15px;
   .line(18px;18px;);
   font-weight: bold;
 }
@@ -28,4 +32,21 @@
     text-decoration: none;
     color: @red;
   }
+}
+
+@media @tablet-widths {
+
+  .contacts__wanna-ask {
+    .line(40px; 40px;);
+    font-weight: lighter;
+  }
+  .contacts__list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 200px;
+  .null();
+  margin-top: 30px;
+}
+
+
 }

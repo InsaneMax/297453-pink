@@ -1,10 +1,11 @@
 .tariffs {
-  .container();
+  width: 295%;
+  border: 1px  solid;
+  transform: translateX(-49%);
 }
 
 .tariffs__name {
-  position: relative;
-  width: 380px;
+  border: 1px solid @white;
   color: @white;
   background-color: @blue;
   .line(18px; 30px);
@@ -16,8 +17,12 @@
   font-weight: lighter;
 }
 
+.tariffs__name--hidden {
+  background-color: transparent;
+}
+
 .tariffs__cell {
-  border: 2px solid @grey;
+  border: 1px solid;
   background-color: @white;
   padding: 10px;
   .line(14px; 30px;);
@@ -25,10 +30,19 @@
 }
 
 .tariffs__hit {
-  position: absolute;
-  top: 0;
   width: 70px;
   height: 80px;
-  background-image: url("../../img/bg-hit.svg");
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
+}
+
+@media @tablet-widths {
+
+  .tariffs {
+  .container();
+  border: 1px  solid;
+  transform: none;
+  }
+
+
 }

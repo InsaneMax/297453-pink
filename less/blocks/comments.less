@@ -3,10 +3,15 @@
   color: @blue;
 }
 
+.comments--hidden {
+  display: none;
+}
+
 .comments__block {
   text-align: center;
   .container();
 }
+
 
 .comments__author {
   .line(18px; 30px);
@@ -16,6 +21,10 @@
 
 .comments__text {
   .line(14px; 30px);
+}
+
+.comments__prof--hidden {
+  display: none;
 }
 
 @media @tablet-widths {
@@ -30,5 +39,10 @@
 .comments__text {
   .line(18px; 30px);
   }
+
+  .comments__prof--hidden {
+  display: block;
+  .line(14px; 30px);
+}
 
 }

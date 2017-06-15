@@ -4,26 +4,24 @@
 }
 
 .main-nav__wrap {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
   .container();
 }
 
-.main-nav__logo {
-  position: absolute;
-  top: 15px;
-  left: 0;
-}
 
 @media @tablet-widths {
 
   .main-nav {
-  height: 110px;
-  background-color: rgba(0,0,0,0.1);
+    height: 110px;
+    background-color: rgba(0,0,0,0.1);
   }
-  .main-nav__logo {
-  position: absolute;
-  top: 40px;
-  left: 0;
+
+  .main-nav__wrap {
+    height: 110px;
+    .container();
   }
 
 }
