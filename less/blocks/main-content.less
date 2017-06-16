@@ -1,9 +1,13 @@
+.main-content__area-wrap {
+  .container();
+}
 
-.main-content__main-photo--redtag {
-  display: inline-block;
-  text-transform: uppercase;
-  color: @white;
-  background-color: @red;
-  .line(12px; 24px);
-  padding: 5px 10px;
+
+@media @tablet-widths {
+
+  .main-content__area-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

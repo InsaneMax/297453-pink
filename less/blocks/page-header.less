@@ -9,6 +9,11 @@
   min-width: 320px;
 }
 
+.page-header--photo {
+  min-height: 240px;
+  background-size: initial;
+}
+
 .page-header__pic {
   margin-top: 114px;
 }
@@ -27,6 +32,11 @@
   .page-header {
     height: 730px;
   }
+
+  .page-header--photo {
+  min-height: 440px;
+  background-size: cover;
+}
 
   .page-header__pic {
     width: 470px;
@@ -50,5 +60,21 @@
 
 @media @desktop-widths {
 
+    .page-header {
+    height: 855px;
+  }
 
+  .page-header--photo {
+  min-height: 395px;
+  background-size: cover;
+}
+
+
+  .page-header__pic {
+    margin-top: 195px;
+  }
+
+  .page-header__2blocks-wrap {
+  justify-content: space-around;
+}
 }

@@ -1,12 +1,43 @@
 .main-title {
+   .container();
   color: @white;
-  background-color: @blue;
   text-align: center;
   padding: 10px 0;
+  margin-top: 35px;
 }
 
 .main-title__text {
-  .container();
   .line(24px;24px;);
   font-weight: lighter;
+}
+
+
+@media @tablet-widths {
+
+.main-title__text {
+  .line(50px;60px;);
+  font-weight: lighter;
+  }
+
+  .main-title {
+   margin-top: 80px;
+  }
+
+
+}
+
+
+@media @desktop-widths {
+
+  .main-title__text {
+   width: 400px;
+   margin: 0 auto;
+  .line(50px;60px;);
+  font-weight: lighter;
+  }
+
+  .main-title {
+   margin-top: 70px;
+  }
+
 }

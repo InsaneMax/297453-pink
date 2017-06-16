@@ -1,8 +1,17 @@
 .filters {
-  width: 320px;
-  background-color: @red;
+  background-color: @grey;
+  padding: 20px 0;
 }
 
+@media @tablet-widths {
+  .filters {
+    padding: 55px 0;
+  }
+}
 
-// почему не наследуется??? все перепробовал,
-// но не врубился?
+@media @desktop-widths {
+  .filters {
+    .container();
+    padding: 55px 0;
+  }
+}

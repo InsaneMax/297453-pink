@@ -30,19 +30,26 @@
 @media @tablet-widths {
 
   .comments__author {
-  .line(20px; 30px);
-  font-weight: bold;
-  font-style: normal;
-  color: @black;
+    .line(20px; 30px);
+    font-weight: bold;
+    font-style: normal;
+    color: @black;
   }
 
-.comments__text {
-  .line(18px; 30px);
+  .comments__text {
+    .line(18px; 30px);
   }
 
   .comments__prof--hidden {
-  display: block;
-  .line(14px; 30px);
+    display: block;
+    .line(14px; 30px);
+  }
+
 }
 
+@media @desktop-widths {
+
+  .comments__block  {
+    width: 820px;
+  }
 }
