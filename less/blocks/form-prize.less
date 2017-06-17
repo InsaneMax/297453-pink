@@ -1,5 +1,10 @@
 .form-prize {
+  display: flex;
+  flex-direction: column;
+}
 
+.form-prize__section {
+ padding: 40px 0;
 }
 
 .form-prize__title {
@@ -21,12 +26,53 @@
 }
 
 .form-prize__wrap {
-  .container-mob();
+  .container();
+  display: flex;
+  flex-direction: column;
+}
+
+.form-prize__cover {
+  display: flex;
+  padding: 15px 0;
+  .container();
+}
+
+.form-prize__wrap--id .form-prize__cover {
+  flex-direction: column;
+}
+
+.form-prize__wrap--achievements .form-prize__cover {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-prize__wrap--info .form-prize__cover {
+  flex-direction: column;
+}
+
+.form-prize__wrap--apps .form-prize__cover {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-prize__wrap--comment .form-prize__cover {
+  flex-direction: column;
 }
 
 .form-prize__input {
   .line(18px; 30px;);
   color: @blue;
+  padding: 15px 5px;
+  margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  order: -2;
 }
 
 .form-prize__input placeholder {
@@ -37,4 +83,201 @@
 .form-prize__section textarea {
   .line(18px; 30px;);
   color: @blue;
+}
+
+@media @tablet-widths {
+
+  .form-prize__section--grey {
+    background-color: @white;
+  }
+
+  .form-prize__section:nth-child(1) {
+    order: 1;
+  }
+
+  .form-prize__section:nth-child(2) {
+    order: 4;
+  }
+
+  .form-prize__section:nth-child(3) {
+    order: 3;
+  }
+
+  .form-prize__section:nth-child(4) {
+    order: 2;
+  }
+
+  .form-prize__section:nth-child(5) {
+    order:5;
+  }
+
+  .form-prize__section:nth-child(6) {
+    order: 6;
+  }
+
+
+
+
+  .form-prize__wrap--id .form-prize__cover {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-prize__wrap--id  input {
+    width: 525px;
+  }
+
+
+
+
+  .form-prize__wrap--achievements {
+    border: 2px solid @grey;
+  }
+
+  .form-prize__wrap--achievements .form-prize__cover {
+    width: 500px;
+    justify-content: flex-start;
+  }
+
+  .form-prize__wrap--achievements .form-prize__title {
+    margin: 0 auto;
+  }
+
+  .form-prize__wrap--achievements label {
+    margin-left: 40px;
+  }
+
+
+
+
+
+  .form-prize__wrap--info {
+    border: 2px solid @grey
+  }
+
+  .form-prize__wrap--info .form-prize__cover {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .form-prize__wrap--info  input {
+    width: 500px;
+  }
+
+  .form-prize__wrap--info  label {
+    align-self: flex-start;
+    margin-left: 65px;
+  }
+
+
+
+
+  .form-prize__wrap--apps {
+    border: 2px solid @grey;
+  }
+
+  .form-prize__wrap--apps .form-prize__cover {
+    width: 500px;
+    justify-content: flex-start;
+  }
+
+  .form-prize__wrap--apps input {
+    margin-right: 30px;
+  }
+
+  .form-prize__wrap--apps .form-prize__title {
+    margin: 0 auto;
+  }
+
+
+
+  .form-prize__wrap--comment {
+    border: 2px solid @grey;
+  }
+
+  .form-prize__wrap--comment .form-prize__cover {
+    align-items: center;
+    padding-bottom: 45px
+  }
+
+  .form-prize__wrap--comment  .form-prize__label {
+    text-align: center;
+  }
+
+  .form-prize__wrap--comment  textarea {
+    width: 500px;
+  }
+
+
+
+  .form-prize__wrap--button {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-prize__wrap--button  .form-prize__obligatorily {
+    .line(14px; 30px;);
+    text-transform: uppercase;
+    color: @blue;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .form-prize {
+    .container();
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-prize__wrap--id {
+    width: auto;
+  }
+
+  .form-prize__wrap--id .form-prize__cover{
+    width: 470px;
+  }
+
+  .form-prize__wrap--apps {
+    width: auto;
+  }
+
+  .form-prize__wrap--apps .form-prize__cover{
+    width: 440px;
+  }
+
+
+  .form-prize__wrap--achievements {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ .form-prize__wrap--achievements .form-prize__cover {
+  width: 260px;
+}
+
+.form-prize__section--grey .form-prize__title {
+  text-align: center;
+}
+
+.form-prize__wrap--comment  textarea {
+  width: 820px;
+}
+
+.form-prize__wrap--info  label {
+  align-self: flex-start;
+  margin-left: 230px;
+}
+
+.form-prize__wrap--id label {
+  margin-right: 15px;
+}
+
+
 }
