@@ -1,6 +1,23 @@
 .page-footer {
+  display: flex;
+  justify-content: space-between;
+  .container();
   background: @white;
   color: @blue;
-  .container-mob();
-  padding-bottom: 30px;
+  padding: 50px 0;
+}
+
+.page-footer--hidden {
+  display: none;
+}
+
+
+@media @tablet-widths {
+
+  .page-footer--hidden {
+   display: flex;
+  }
+
+
+
 }

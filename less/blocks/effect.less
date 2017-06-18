@@ -1,0 +1,46 @@
+.effect {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+  background-color: @white;
+  color: @blue;
+}
+
+.effect__24hour {
+  align-self: center;
+  width: 310px;
+  text-align: center;
+}
+
+.effect__title {
+  .line(30px;30px;);
+  color: @black;
+}
+
+.effect__text {
+  .line(14px;24px;);
+}
+
+.effect__pic {
+  width: 300px;
+  height: 350px;
+  background-image: url("../img/timer.png");
+  background-repeat: no-repeat;
+}
+
+.effect__link {
+  display: block;
+  color: @red;
+}
+
+.effect--hidden {
+  display: none;
+}
+
+@media @tablet-widths {
+
+  .effect--hidden {
+  display: flex;
+  justify-content: space-around;
+  }
+}

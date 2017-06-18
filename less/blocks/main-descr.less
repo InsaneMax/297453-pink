@@ -1,10 +1,42 @@
 .main-descr {
+  .container();
   color: @blue;
   background-color: @white;
-  padding: 10px 0;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .main-descr__text {
-  .container-mob();
   .line(14px;30px;);
+}
+
+.main-descr__text--visible {
+  display: none;
+}
+
+
+@media @tablet-widths {
+
+  .main-descr {
+    padding: 100px 0;
+  }
+
+  .main-descr__text {
+    width: 480px;
+    margin: 0 auto;
+    .line(18px;30px;);
+  }
+
+  .main-descr__text--visible {
+  display: inline;
+}
+}
+
+@media @desktop-widths {
+
+  .main-descr__text {
+    width: 580px;
+    margin: 0 auto;
+    .line(18px;30px;);
+  }
 }

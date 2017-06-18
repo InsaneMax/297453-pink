@@ -1,0 +1,53 @@
+.range {
+  position: relative;
+  width: 240px;
+  padding: 30px 15px;
+  margin: 10px 0;
+  border-bottom: 1px solid @dark-grey;
+}
+
+
+.range__scale {
+  height: 2px;
+  background-color: @blue;
+}
+
+.range__toogle {
+  position: absolute;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  background-color: @grey;
+  border-radius: 50%;
+  border: 3px solid @red;
+  cursor: pointer;
+}
+
+.range__toogle--1 {
+  left: 80%;
+}
+
+.range__toogle--2 {
+  left: 15%;
+}
+
+.range__toogle--3 {
+  left: 50%;
+}
+
+@media @tablet-widths {
+
+  .range {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media @desktop-widths {
+    .range {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}

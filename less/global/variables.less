@@ -1,13 +1,31 @@
 @grey: #f2f2f2;
+@dark-grey: #dddfe0;
 @white: #ffffff;
+@black: #000000;
 @red: #d22856;
 @blue: #283645;
 @green: #2aab6d;
+@tablet-widths: ~"(min-width: 660px)";
+@desktop-widths: ~"(min-width: 960px)";
 
 .container-mob() {
   width: 280px;
   margin: 0 auto;
 }
+
+.container() {
+  width: 280px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
 
 .line(@font-size; @line-height;) {
   font-size: @font-size;
