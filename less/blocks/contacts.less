@@ -25,7 +25,7 @@
 }
 
 .contacts__list p {
-  .line(24px; 24px;);
+  .line(24px; 30px;);
   font-weight: lighter;
   margin: 0;
   margin-top: 8px;
@@ -39,16 +39,69 @@
 @media @tablet-widths {
 
   .contacts__wanna-ask {
-    .line(40px; 40px;);
+    .line(40px; 46px;);
     font-weight: lighter;
   }
   .contacts__list {
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   min-height: 200px;
   .null();
-  margin-top: 30px;
+  margin-top: 35px;
+  }
+
+.contacts__list li {
+  width: 285px;
+    &:last-child {
+      padding: 0;
+      margin-top: 35px;
+    }
+  }
+
 }
 
+@media @desktop-widths {
 
+    .contacts__wanna-ask {
+      display: block;
+      margin-bottom: 58px;
+    .line(50px; 63px;);
+    font-weight: lighter;
+  }
+
+    .contacts__list {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-height: auto;
+  margin-top: 60px;
+  .null();
+  margin: 0;
+  }
+
+  .contacts__list li {
+  width: 295px;
+  padding: 0 10px;
+    &:last-child {
+      padding: 0 10px;
+      margin: 0;
+    }
+  }
+
+  .contacts__list p {
+    margin-top: 28px;
+  }
+
+  .contacts__item1 {
+  order: 1;
+  }
+
+  .contacts__item2 {
+    order: 3;
+  }
+
+  .contacts__item3 {
+    order: 2;
+  }
 }

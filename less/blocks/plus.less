@@ -1,6 +1,6 @@
 .plus {
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .plus__title {
@@ -11,8 +11,45 @@
   margin-bottom: 13px;
 }
 
-.plus-text {
+.plus__text {
   .line(14px; 24px;);
   color: @blue;
   margin: 0;
+}
+
+@media @tablet-widths {
+
+  .plus {
+    text-align: left;
+      &:last-child {
+        margin-bottom: 0;
+      }
+  }
+
+
+  .plus__text {
+   margin: 0;
+  }
+
+}
+
+@media @desktop-widths  {
+
+  .plus {
+    text-align: center;
+  }
+
+
+  .plus__title {
+  .line(30px; 30px;);
+  margin: 0;
+  margin-bottom: 23px;
+  }
+
+
+.plus__text {
+  .line(18px; 30px;);
+  color: @blue;
+  margin: 0;
+  }
 }
