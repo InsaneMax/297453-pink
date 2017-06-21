@@ -7,9 +7,8 @@
 }
 
 .effect__24hour {
-  align-self: center;
   width: 310px;
-  text-align: center;
+  text-align: left;
 }
 
 .effect__title {
@@ -22,9 +21,10 @@
 }
 
 .effect__pic {
-  width: 300px;
-  height: 350px;
+  width: 240px;
+  height: 280px;
   background-image: url("../img/timer.png");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -40,7 +40,62 @@
 @media @tablet-widths {
 
   .effect--hidden {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .effect__title {
+  .line(30px;36px;);
+  color: @black;
+  width: 185px;
+  margin: 0;
+  margin-top: 44px;
+  }
+
+  .effect__link {
+  .line(14px;24px;);
+  }
+
+}
+
+@media @desktop-widths {
+
+  .effect {
+  padding: 56px 0 10px 0;
+}
+
+  .effect__24hour {
+  width: 570px;
+  text-align: left;
+  padding-left: 65px;
+}
+
+.effect__pic {
+  width: 300px;
+  height: 350px;
+  background-image: url("../img/timer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+  .effect--hidden {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  background-color: @grey;
+  }
+
+  .effect__title {
+  .line(30px;30px;);
+  width: auto;
+  margin-bottom: 23px;
+  }
+
+  .effect__text {
+    .line(18px;30px;);
+    margin-bottom: 31px;
+    }
+
+  .effect__link {
+    .line(18px;30px;);
   }
 }

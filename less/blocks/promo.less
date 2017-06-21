@@ -2,7 +2,7 @@
   background-color: #242d38;
   color: @white;
   min-height: 270px;
-  padding: 30px 0;
+  margin-top: 397px;
 }
 
 .promo__wrap {
@@ -18,13 +18,17 @@
 .promo__container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 30px;
+  align-items: center;
+  width: 210px;
+  min-height: 69px;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
 
 .promo__app {
   font-size: 0;
 }
+
 
 .promo__app--ios {
   display: block;
@@ -37,7 +41,7 @@
 .promo__app--android {
   display: block;
   width: 46px;
-  height: 58px;
+  height: 49px;
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
 }
@@ -45,7 +49,7 @@
 .promo__app--windows {
   display: block;
   width: 50px;
-  height: 60px;
+  height: 43px;
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
 }
@@ -66,15 +70,43 @@
   align-self: center;
   }
 
+  .promo__wrap {
+    width: 300px;
+    margin: 0;
+    padding: 95px 30px 105px 30px;
+  }
+
   .promo__sight {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 40px;
     .line(40px; 50px;);
+  }
+
+  .promo__container {
+    margin-bottom: 30px;
+  }
+
+  .promo__descr {
+  .line(18px; 24px;);
   }
 }
 
   @media @desktop-widths {
 
-
+    .promo__wrap {
+    width: 300px;
+    margin: 0;
+    padding: 108px 30px 121px 207px;
   }
+
+    .promo__sight {
+    width: 240px;
+    margin: 0 auto;
+    .line(50px; 60px;);
+  }
+
+    .promo__container {
+    margin-bottom: 48px;
+  }
+
+}

@@ -7,19 +7,21 @@
 </head>
 <body>
   <header class="page-header  page-header--form">
-    <nav class="main-nav  main-nav--open">
-      <div class="main-nav__wrap  main-nav__wrap--top">
-        <div class="main-nav__top-container">
-          <a href="index.html"><img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Логотпип сайта"></a>
-          <button class="btn  btn--header-close">Меню</button>
+    <nav class="main-nav">
+      <div class="main-nav--open">
+        <div class="main-nav__wrap  main-nav__wrap--top">
+          <div class="main-nav__top-container">
+            <a href="index.html"><img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Логотпип сайта"></a>
+            <button class="btn  btn--header-close">Меню</button>
+          </div>
         </div>
+        <ul class="main-nav-list  main-nav-list--visible">
+          <li class="main-nav-list__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav-list__item"><a>Конкурс</a></li>
+          <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
+        </ul>
       </div>
-      <ul class="main-nav-list  main-nav-list--visible">
-        <li class="main-nav-list__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav-list__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav-list__item"><a>Конкурс</a></li>
-        <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
-      </ul>
     </nav>
     <div class="main-title">
       <h1 class="main-title__text">Конкурс на самое бесбашенное путешествие с Пинк</h1>
@@ -50,10 +52,10 @@
         </div>
       </section>
 
-      <!--     Секция-2 -->
+      <!--Секция-2 -->
       <section class="form-prize__section  form-prize__section--grey">
-        <h2 class="form-prize__title">Ваши безбашенные достижения в путешествии</h2>
         <div class="form-prize__wrap  form-prize__wrap--achievements">
+        <h2 class="form-prize__title">Ваши безбашенные достижения в путешествии</h2>
           <div class="form-prize__cover">
             <label class="form-prize__label">Сделал селфи с акулой:</label>
             <input class="form-prize__input" type="checkbox" checked>
@@ -96,7 +98,7 @@
       </section>
 
       <!--     Секция-4 -->
-      <section class="form-prize__section">
+      <section class="form-prize__section  form-prize__section--grey">
         <div class="form-prize__wrap  form-prize__wrap--apps">
           <h2 class="form-prize__title">С какими приложениями путешествовали</h2>
           <div class="form-prize__cover">
@@ -136,7 +138,7 @@
 
     </form>
   </main>
-  <footer class="page-footer  page-footer--hidden">
+  <footer class="page-footer">
     <a href="index.html"><img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип приложения "></a>
     <div class="social-links">
       <a href="#" class="social-links__item  social-links__item--twitter">TWITTER</a>
@@ -144,8 +146,8 @@
       <a href="#" class="social-links__item  social-links__item--youtube">YOUTUBE</a>
     </div>
     <div class="page-footer__copyright">
-      <span>Разработано<a href="https://htmlacademy.ru/">HTML-academy</a></span>
-    </div>
+      <span>Разработано</span><a class="page-footer__academy" href="https://htmlacademy.ru/">HTML-academy</a>
+    </div
   </footer>
 </body>
 </html>

@@ -10,6 +10,7 @@
   background-color: @blue;
   .line(18px; 30px);
   font-weight: bold;
+  padding: 18px 0;
 }
 
 .tariffs__name span {
@@ -24,7 +25,7 @@
 .tariffs__cell {
   border: 1px solid;
   background-color: @white;
-  padding: 10px;
+  padding: 15px;
   .line(14px; 30px;);
   color: @blue;
 }
@@ -39,10 +40,32 @@
 @media @tablet-widths {
 
   .tariffs {
-  .container();
-  border: 1px  solid;
-  transform: none;
+    .container();
+    border: 1px  solid;
+    transform: none;
   }
 
+  .tariffs__name {
+    padding: 9px 12px;
+  }
 
+  .tariffs__cell {
+    border: 1px solid;
+    background-color: @white;
+    padding: 7px 15px;
+    .line(14px; 30px;);
+    color: @blue;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .tariffs__name {
+    padding: 17px 18px;
+  }
+
+  .tariffs__cell {
+    padding: 15px;
+  }
 }

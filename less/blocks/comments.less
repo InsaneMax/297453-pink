@@ -10,6 +10,8 @@
 .comments__block {
   text-align: center;
   .container();
+  padding-top: 40px;
+  padding-bottom: 103px;
 }
 
 
@@ -29,20 +31,32 @@
 
 @media @tablet-widths {
 
+  .comments__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
   .comments__author {
     .line(20px; 30px);
     font-weight: bold;
     font-style: normal;
     color: @black;
+    order: 2;
   }
 
   .comments__text {
     .line(18px; 30px);
+    order: 1;
+    margin-bottom: 35px;
   }
 
   .comments__prof--hidden {
     display: block;
     .line(14px; 30px);
+    order: 3;
   }
 
 }
@@ -50,6 +64,19 @@
 @media @desktop-widths {
 
   .comments__block  {
-    width: 820px;
+    width: 695px;
+    padding-top: 168px;
+  }
+
+    .comments__author {
+    .line(24px; 30px);
+  }
+
+    .comments__prof--hidden {
+    .line(18px; 30px);
+  }
+
+  .comments__text span {
+    display: none;
   }
 }
