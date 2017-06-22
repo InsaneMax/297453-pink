@@ -3,8 +3,38 @@
   font-size: 0;
 }
 
-.logo__mobile:hover  {
+.logo__mobile {
+  fill: @white;
+}
+
+.logo__mobile:hover {
   fill: @red;
+}
+
+.logo__mobile:active {
+  fill: @white;
+  opacity: 0.3;
+}
+
+.logo__mobile--blue {
+  fill: @blue;
+}
+
+.logo__mobile--blue:hover  {
+  fill: @red;
+}
+
+.logo__mobile--blue:active {
+  opacity: 0.3;
+}
+
+
+.logo__desktop {
+  display: none;
+}
+
+.logo__tablet {
+  display: none;
 }
 
 .logo__academy {
@@ -15,22 +45,6 @@
   &:active {
     opacity: 0.5;
   }
-}
-
-.logo__tablet {
-  display: none;
-}
-
-.logo__desktop {
-  display: none;
-}
-
-.logo__mobile--blue {
-
-}
-
-.logo__desktop--blue {
-
 }
 
 
@@ -46,6 +60,16 @@
 
   .logo__tablet {
     display: block;
+    fill: @white;
+  }
+
+  .logo__tablet:hover {
+    fill: @red;
+  }
+
+  .logo__tablet:active {
+    fill: @white;
+    opacity: 0.3;
   }
 
 
@@ -63,5 +87,26 @@
 
   .logo__desktop {
     display: block;
+    fill: @white;
+  }
+
+  .logo__desktop:hover {
+    fill: @red;
+  }
+
+  .logo__desktop:active {
+    fill: @white;
+    opacity: 0.3;
+  }
+
+  .logo__desktop--blue {
+    fill: @blue;
+  }
+
+  .logo__desktop--blue:hover  {
+    fill: @red;
+  }
+  .logo__desktop--blue:active {
+    opacity: 0.3;
   }
 }
