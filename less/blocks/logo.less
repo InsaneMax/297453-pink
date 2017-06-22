@@ -1,23 +1,61 @@
 .logo {
-  width: 150px;
+  display: block;
+  font-size: 0;
 }
 
-
-
-.logo__name path {
-  fill: ;
+.logo__mobile:hover {
+  fill: @red;
 }
 
-.logo__pic {
+.logo__academy:hover {
+  fill: @red;
+}
+
+.logo__tablet {
   display: none;
 }
 
+.logo__desktop {
+  display: none;
+}
+
+.logo__mobile--blue {
+
+}
+
+.logo__desktop--blue {
+
+}
+
+
 @media @tablet-widths {
-  .logo__pic {
-  display: block;
+
+  .logo__mobile {
+    display: none;
   }
+
+  .logo__mobile--blue {
+    display: block;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+
+
 }
 
 @media @desktop-widths {
 
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__mobile--blue {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
 }
