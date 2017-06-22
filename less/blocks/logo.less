@@ -3,12 +3,18 @@
   font-size: 0;
 }
 
-.logo__mobile:hover {
+.logo__mobile:hover  {
   fill: @red;
 }
 
-.logo__academy:hover {
+.logo__academy {
   fill: @red;
+  &:hover {
+    fill: @blue;
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .logo__tablet {
