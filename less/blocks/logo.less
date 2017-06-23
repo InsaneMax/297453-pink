@@ -1,0 +1,112 @@
+.logo {
+  display: block;
+  font-size: 0;
+}
+
+.logo__mobile {
+  fill: @white;
+}
+
+.logo__mobile:hover {
+  fill: @red;
+}
+
+.logo__mobile:active {
+  fill: @white;
+  opacity: 0.3;
+}
+
+.logo__mobile--blue {
+  fill: @blue;
+}
+
+.logo__mobile--blue:hover  {
+  fill: @red;
+}
+
+.logo__mobile--blue:active {
+  opacity: 0.3;
+}
+
+
+.logo__desktop {
+  display: none;
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__academy {
+  fill: @red;
+  &:hover {
+    fill: @blue;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+@media @tablet-widths {
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__mobile--blue {
+    display: block;
+  }
+
+  .logo__tablet {
+    display: block;
+    fill: @white;
+  }
+
+  .logo__tablet:hover {
+    fill: @red;
+  }
+
+  .logo__tablet:active {
+    fill: @white;
+    opacity: 0.3;
+  }
+
+
+}
+
+@media @desktop-widths {
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__mobile--blue {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+    fill: @white;
+  }
+
+  .logo__desktop:hover {
+    fill: @red;
+  }
+
+  .logo__desktop:active {
+    fill: @white;
+    opacity: 0.3;
+  }
+
+  .logo__desktop--blue {
+    fill: @blue;
+  }
+
+  .logo__desktop--blue:hover  {
+    fill: @red;
+  }
+  .logo__desktop--blue:active {
+    opacity: 0.3;
+  }
+}

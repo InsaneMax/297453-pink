@@ -2,8 +2,8 @@
   background-color: @blue;
   color: @white;
   background-image:
-    url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
+  url("../img/iphone-hand-mobile@1x.png"),
+  url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom 270px right 63px, center;
   background-size: auto, cover;
@@ -12,74 +12,140 @@
 }
 
 .page-header--photo {
-  min-height: 240px;
+  // min-height: 240px;
+  min-height: 495px;
+  background-image:
+  none,
+  url("../img/bg-back-mobile@1x.jpg");
   background-size: initial;
 }
 
 .page-header--form {
   min-height: 495px;
+  background-image:
+  none,
+  url("../img/bg-back-mobile@1x.jpg");
   background-size: initial;
 }
 
-.page-header__2blocks-wrap {
-  display: flex;
-  flex-direction: column;
+@media
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+ .page-header {
+  background-image:
+  url("../img/iphone-hand-mobile@2x.png"),
+  url("../img/bg-back-mobile@2x.jpg");
+  background-size: auto, cover;
 }
+
+.page-header--photo {
+  min-height: 240px;
+  background-image:
+  none,
+  url("../img/bg-back-mobile@2x.jpg");
+  background-size: initial;
+}
+
+.page-header--form {
+  min-height: 495px;
+  background-image:
+  none,
+  url("../img/bg-back-mobile@2x.jpg");
+  background-size: initial;
+}
+
+
+}
+
 
 @media @tablet-widths {
 
   .page-header {
-    // min-height: 730px;
+    background-image:
+    url("../img/iphone-hand-tablet@1x.png"),
+    url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom 0 right 20px, center;
-    background-size: 470px, cover;
+    background-size: 750px, cover;
   }
 
   .page-header--photo {
-  min-height: 440px;
-  background-size: cover;
-}
+    min-height: 240px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+  }
 
   .page-header--form {
-  min-height: 695px;
-  background-size: cover;
+    min-height: 695px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+  }
+
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+   .page-header {
+    background-image:
+    url("../img/iphone-hand-tablet@2x.png"),
+    url("../img/bg-back-tablet@2x.jpg");
+    background-size: 1500px, cover;
+  }
+  .page-header--photo {
+    min-height: 240px;
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-size: cover;
+  }
+
+  .page-header--form {
+    min-height: 695px;
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-size: cover;
+  }
 }
 
-  .page-header__wrap {
-    text-align: center;
-    width: auto;
-    margin: 0;
-    order: 2;
-  }
-
-  .page-header__2blocks-wrap {
-    display: flex;
-    flex-direction: row;
-    .container();
-  }
 }
 
 @media @desktop-widths {
 
   .page-header {
-    // height: 855px;
+    background-image:
+    url("../img/iphone-hand-desktop@1x.png"),
+    url("../img/bg-back-desktop@1x.jpg");
+    background-position: bottom 0 right 20px, center;
+    background-size: 80%, cover;
   }
 
   .page-header--photo {
-  min-height: 395px;
-  background-size: cover;
-}
+    min-height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+  }
 
   .page-header--form {
-  min-height: 395px;
-  background-size: cover;
+    min-height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+  }
+
+
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+   .page-header {
+    background-image:
+    url("../img/iphone-hand-desktop@2x.png"),
+    url("../img/bg-back-desktop@2x.jpg");
+    background-size: contain, cover;
+  }
+
+  .page-header--photo {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  .page-header--form {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: cover;
+  }
 }
 
-
-  .page-header__pic {
-    margin-top: 195px;
-  }
-
-  .page-header__2blocks-wrap {
-  justify-content: space-around;
-  }
 }

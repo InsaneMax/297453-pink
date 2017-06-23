@@ -1,13 +1,19 @@
 .main-nav {
   height: 65px;
-  background-color: rgba(0,0,0,0.1);
+  height: 333px;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .page-header--form .main-nav {
   height: auto;
 }
 
+.page-header .main-nav {
+  height: auto;
+}
+
 .main-nav--open {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -42,12 +48,11 @@
 @media @tablet-widths {
 
   .main-nav {
-    min-height: 110px;
-    background-color: rgba(0,0,0,0.1);
+    min-height: 375px;
+    background-color: rgba(0,0,0,0.3);
   }
 
   .main-nav--open {
-    // .container();
     height: auto;
     background-color: @blue;
   }
@@ -71,6 +76,10 @@
 }
 
 @media @desktop-widths {
+
+  .page-header .main-nav {
+    min-height: 110px;
+  }
 
   .main-nav--open {
     .container();
