@@ -112,33 +112,39 @@
       </g>
     </symbol>
   </svg>
-  <header class="page-header  page-header--photo">
+  <header class="page-header  page-header--form">
     <nav class="main-nav">
-      <div class="main-nav__wrap">
-        <a class="logo" href="index.html">
-          <svg class="logo__mobile" width="75" height="22">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mob-white"></use>
-          </svg>
-          <svg class="logo__tablet" width="147" height="40">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tabl-white"></use>
-          </svg>
-          <svg class="logo__desktop" width="147" height="40">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desk-white"></use>
-          </svg>
-        </a>
-        <ul class="main-nav-list">
+      <div class="main-nav--open">
+        <div class="main-nav__wrap  main-nav__wrap--top">
+          <div class="main-nav__top-container">
+            <a class="logo" href="index.html">
+              <svg class="logo__mobile" width="75" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mob-white"></use>
+              </svg>
+              <svg class="logo__tablet" width="147" height="40">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tabl-white"></use>
+              </svg>
+              <svg class="logo__desktop" width="147" height="40">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desk-white"></use>
+              </svg>
+            </a>
+            <button class="btn  btn--header-close">Меню</button>
+          </div>
+        </div>
+        <ul class="main-nav-list  main-nav-list--visible">
           <li class="main-nav-list__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav-list__item  main-nav-list__item--active"><a>Фотографии</a></li>
+          <li class="main-nav-list__item   main-nav-list__item--active"><a>Фотографии</a></li>
           <li class="main-nav-list__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML-academy</a></li>
         </ul>
-        <button class="btn  btn--header-nav">Меню</button>
       </div>
     </nav>
     <div class="main-title">
       <h1 class="main-title__text">Фотографии пользователей</h1>
     </div>
   </header>
+
+
   <main class="main-content">
     <div class="main-descr">
       <p class="main-descr__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
