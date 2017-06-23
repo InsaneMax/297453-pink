@@ -362,24 +362,52 @@ input[type="radio"]:checked + label::after {
     flex-wrap: wrap;
   }
 
+  .form-prize__section:first-child {
+    padding-bottom: 0;
+  }
+
+    .form-prize__section:nth-child(3) {
+    padding-bottom: 35px;
+  }
+
+  .form-prize__section:nth-child(6) {
+    padding-bottom: 0;
+  }
+
   .form-prize__wrap--id {
     width: auto;
   }
 
-  .form-prize__wrap--id .form-prize__cover{
-    width: 470px;
+  .form-prize__cover {
+    padding: 15px 0 22px;
+  }
+
+  .form-prize__wrap--id .form-prize__cover {
+    width: 430px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .form-prize__wrap--id label {
+  margin-top: -11px;
   }
 
   .form-prize__wrap--apps {
     width: auto;
+    height: 300px;
   }
 
   .form-prize__wrap--apps .form-prize__cover{
-    width: 440px;
+    width: 340px;
+    padding: 38px 0;
+    padding-left: 81px;
   }
 
 
   .form-prize__wrap--achievements {
+    padding: 28px 0;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -387,34 +415,38 @@ input[type="radio"]:checked + label::after {
   }
 
   .form-prize__wrap--achievements .form-prize__cover {
-    width: 260px;
+    width: 295px;
+    margin: 10px 0;
   }
 
   .form-prize__wrap--achievements .form-prize__title {
     text-align: center;
     display: inline-block;
-    padding: 4px 50px;
+    padding: 29px 50px;
     margin-right: 251px;
-    margin-top: -11px;
+    margin-top: -66px;
     width: auto;
   }
 
   .form-prize__wrap--info .form-prize__icon--1 {
-    top: 16px;
-    left: 381px;
+    top: 46px;
+    left: 361px;
   }
 
   .form-prize__wrap--info .form-prize__icon--2 {
-    top: 16px;
-    left: 851px;
+    top: 46px;
+    left: 831px;
   }
 
   .form-prize__wrap--comment  textarea {
-    width: 820px;
+    width: 777px;
+    height: 94px;
+    padding: 15px 20px;
   }
 
   .form-prize__wrap--comment .form-prize__title {
     margin-top: -16px;
+    padding-bottom: 10px;
   }
 
   .form-prize__wrap--info {
@@ -422,12 +454,17 @@ input[type="radio"]:checked + label::after {
   }
 
   .form-prize__wrap--info input {
-    width: 300px;
+    width: 260px;
   }
 
   .form-prize__wrap--info  label {
-    align-self: flex-start;
+    margin-left: 70px;
   }
+
+    .form-prize__wrap--info  .form-prize__cover {
+      padding: 45px 0;
+      padding-bottom: 0;
+    }
 
   .form-prize__wrap--id label {
     margin-right: 15px;
@@ -435,6 +472,10 @@ input[type="radio"]:checked + label::after {
 
   .form-prize__wrap--info .form-prize__title--hidden {
     display: none;
+  }
+
+  .form-prize__section {
+    padding: 30px 0;
   }
 
 }
