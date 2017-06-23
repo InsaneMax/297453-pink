@@ -94,7 +94,7 @@
     </symbol>
     <symbol viewBox="-35.422 -7.96 31.92 31.92" id="contrast">
       <g>
-        <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+        <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
         <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
       </g>
     </symbol>
@@ -143,12 +143,13 @@
     <div class="main-descr">
       <p class="main-descr__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
-    <a href="#">
+    <a class="main-content__main-photo" href="#">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
         <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2sx.jpg">
         <img class="main-content__user-photo" src="img/panorama-mobile@1x.jpg", srcset="img/panorama-mobile@2x.jpg" alt="фото «Панорама дня»">
       </picture>
+    <span class="main-content__panorama">ПАНОРАМА ДНЯ</span>
     </a>
     <div class="main-content__area-wrap">
       <section class="image  image--fullscreen">
@@ -253,26 +254,44 @@
           <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg, img/photo-7-tablet@2x.jpg">
           <img class="form-filters__pic" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg" alt="">
         </picture>
-        <div class="form-filters__section">
-          <div class="range">
-            <div class="range__scale">
-              <div class="range__toogle  range__toogle--1"></div>
+
+            <div class="form-filters__section">
+              <div class="form-filters__icons">
+                <svg class="form-filters__crop  form-filters__icons--active" width="44" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
+                </svg>
+                <svg class="form-filters__fill  form-filters__icons--active" width="43" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                </svg>
+                <svg class="form-filters__contrast form-filters__icons--active" width="42" height="42">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contrast"></use>
+                </svg>
+              </div>
+              <div class="form-filters__wrap">
+                <div class="range  range--1">
+                  <div class="range__scale">
+                    <div class="range__toogle  range__toogle--1"></div>
+                  </div>
+                </div>
+
+                <div class="range  range--2">
+                  <div class="range__scale">
+                    <div class="range__toogle  range__toogle--2"></div>
+                  </div>
+                </div>
+
+                <div class="range  range--3">
+                  <div class="range__scale">
+                    <div class="range__toogle  range__toogle--3"></div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn  btn--red">Запосить</button>
+              <input class="btn  btn--grey" type="reset" name="" value="Отмена">
+
             </div>
-          </div>
-          <div class="range">
-            <div class="range__scale">
-              <div class="range__toogle  range__toogle--2"></div>
-            </div>
-          </div>
-          <div class="range">
-            <div class="range__scale">
-              <div class="range__toogle  range__toogle--3"></div>
-            </div>
-          </div>
-          <button class="btn  btn--red">Запосить</button>
-          <input class="btn  btn--grey" type="reset" name="" value="Отмена">
-        </div>
-      </form>
+          </form>
     </section>
   </main>
   <footer class="page-footer">

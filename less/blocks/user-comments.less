@@ -1,4 +1,8 @@
 .user-comments {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: @grey;
   padding: 10px;
   box-sizing: border-box;
@@ -26,5 +30,18 @@
   .line(12px;24px;);
   color: @red;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.user-comments__like::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/icon-heart.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

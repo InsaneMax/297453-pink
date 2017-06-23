@@ -2,6 +2,23 @@
   .container();
 }
 
+.main-content__main-photo {
+  position: relative;
+  display: block;
+}
+
+.main-content__panorama {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 5px 20px;
+  .line(12px;24px;);
+  font-weight: bold;
+  background-color: @red;
+  color: @white;
+  text-transform: uppercase;
+}
+
 .main-content__user-photo {
   display: block;
   width: 100%;
@@ -14,5 +31,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .main-content__panorama {
+    top: 60px;
+    right: 20px;
+  }
+}
+
+@media @desktop-widths {
+
+  .main-content__panorama {
+    top: 60px;
+    right: 130px;
   }
 }
