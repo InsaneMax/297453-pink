@@ -14,6 +14,10 @@
   text-transform: uppercase;
 }
 
+.form-prize__title--hidden {
+  display: none;
+}
+
 .form-prize--red {
   .line(14px; 30px;);
   font-weight: lighter;
@@ -57,6 +61,10 @@
   align-items: center;
 }
 
+.form-prize__wrap--info .form-prize__title--hidden {
+  display: none;
+}
+
 .form-prize__wrap--comment .form-prize__cover {
   flex-direction: column;
 }
@@ -68,12 +76,88 @@
   margin-bottom: 15px;
 }
 
+.form-prize input:hover {
+  outline: 2px solid @blue;
+}
+
+.form-prize input:active {
+  outline: 2px solid @red;
+}
+
+.form-prize input:focus {
+  outline: 2px solid @red;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
-  width: 40px;
-  height: 40px;
-  order: -2;
+  display: none;
 }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid @dark-grey;
+  background-color: @white;
+
+  position: absolute;
+  left: 5px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-yes-red.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+input[type="radio"] + label {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+}
+
+
+input[type="radio"] + label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid @dark-grey;
+  background-color: @white;
+
+  position: absolute;
+  left: 5px;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: @red;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  left: 13px;
+  top: 9px;
+}
+
 
 .form-prize__input placeholder {
   .line(18px; 30px;);
@@ -84,6 +168,8 @@ input[type="checkbox"] {
   .line(18px; 30px;);
   color: @blue;
 }
+
+
 
 @media @tablet-widths {
 
@@ -115,6 +201,9 @@ input[type="checkbox"] {
     order: 6;
   }
 
+  input[type="radio"] + label {
+    width: 300px;
+  }
 
 
 
@@ -133,6 +222,7 @@ input[type="checkbox"] {
 
   .form-prize__wrap--achievements {
     border: 2px solid @grey;
+    padding-bottom: 15px;
   }
 
   .form-prize__wrap--achievements .form-prize__cover {
@@ -153,7 +243,38 @@ input[type="checkbox"] {
 
 
   .form-prize__wrap--info {
-    border: 2px solid @grey
+    border: 2px solid @grey;
+    position: relative;
+  }
+
+  .form-prize__wrap--info .form-prize__icon {
+    display: block;
+    height: 62px;
+    width: 62px;
+    background-color: @dark-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+
+  }
+
+  .form-prize__wrap--info .form-prize__icon--1 {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    left: 491px;
+    top: 26px;
+  }
+
+
+  .form-prize__wrap--info .form-prize__icon--2 {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    left: 491px;
+    top: 165px;
   }
 
   .form-prize__wrap--info .form-prize__cover {
@@ -162,16 +283,15 @@ input[type="checkbox"] {
   }
 
   .form-prize__wrap--info  input {
-    width: 500px;
+    width: 370px;
+    padding-left: 15px;
+    padding-right: 100px;
   }
 
   .form-prize__wrap--info  label {
     align-self: flex-start;
-    margin-left: 65px;
+    margin-left: 120px;
   }
-
-
-
 
   .form-prize__wrap--apps {
     border: 2px solid @grey;
@@ -179,7 +299,7 @@ input[type="checkbox"] {
 
   .form-prize__wrap--apps .form-prize__cover {
     width: 500px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .form-prize__wrap--apps input {
@@ -223,6 +343,14 @@ input[type="checkbox"] {
     color: @blue;
   }
 
+  .form-prize .form-prize__title {
+    display: inline-block;
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-top: -8px;
+    background-color: @white;
+  }
+
 }
 
 @media @desktop-widths {
@@ -234,24 +362,56 @@ input[type="checkbox"] {
     flex-wrap: wrap;
   }
 
+  .form-prize__section:first-child {
+    padding-bottom: 0;
+  }
+
+  .form-prize__section:nth-child(3) {
+    padding-bottom: 35px;
+  }
+
+  .form-prize__section:nth-child(6) {
+    padding-bottom: 0;
+  }
+
   .form-prize__wrap--id {
     width: auto;
   }
 
-  .form-prize__wrap--id .form-prize__cover{
-    width: 470px;
+  .form-prize__cover {
+    padding: 15px 0 22px;
+  }
+
+  .form-prize__wrap--id .form-prize__cover {
+    width: 430px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .form-prize__wrap--id label {
+    margin-top: -11px;
   }
 
   .form-prize__wrap--apps {
     width: auto;
+    height: 300px;
   }
 
-  .form-prize__wrap--apps .form-prize__cover{
-    width: 440px;
+  .form-prize__wrap--apps .form-prize__title {
+    padding-bottom: 20px;
+  }
+
+  .form-prize__wrap--apps .form-prize__cover {
+    width: 340px;
+    padding: 27px 0;
+    padding-left: 81px;
   }
 
 
   .form-prize__wrap--achievements {
+    padding: 28px 0;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -259,32 +419,67 @@ input[type="checkbox"] {
   }
 
   .form-prize__wrap--achievements .form-prize__cover {
-    width: 260px;
+    width: 295px;
+    margin: 10px 0;
   }
 
-  .form-prize__section--grey .form-prize__title {
+  .form-prize__wrap--achievements .form-prize__title {
     text-align: center;
-    width: 100%;
+    display: inline-block;
+    padding: 29px 50px;
+    margin-right: 251px;
+    margin-top: -66px;
+    width: auto;
+  }
+
+  .form-prize__wrap--info .form-prize__icon--1 {
+    top: 46px;
+    left: 361px;
+  }
+
+  .form-prize__wrap--info .form-prize__icon--2 {
+    top: 46px;
+    left: 831px;
   }
 
   .form-prize__wrap--comment  textarea {
-    width: 820px;
+    width: 777px;
+    height: 94px;
+    padding: 15px 20px;
+  }
+
+  .form-prize__wrap--comment .form-prize__title {
+    margin-top: -16px;
+    padding-bottom: 10px;
   }
 
   .form-prize__wrap--info {
     flex-direction: row;
   }
 
-    .form-prize__wrap--info input {
-      width: 400px;
-    }
+  .form-prize__wrap--info input {
+    width: 260px;
+  }
 
   .form-prize__wrap--info  label {
-    align-self: flex-start;
+    margin-left: 70px;
+  }
+
+  .form-prize__wrap--info  .form-prize__cover {
+    padding: 45px 0;
+    padding-bottom: 0;
   }
 
   .form-prize__wrap--id label {
     margin-right: 15px;
+  }
+
+  .form-prize__wrap--info .form-prize__title--hidden {
+    display: none;
+  }
+
+  .form-prize__section {
+    padding: 30px 0;
   }
 
 }

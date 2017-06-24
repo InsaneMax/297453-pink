@@ -1,6 +1,39 @@
 .comments {
+  // position: relative;
   background-color: @white;
   color: @blue;
+}
+
+.comments__wrap-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 65px;
+  height: 60px;
+  order: 4;
+}
+
+.comments__btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.comments__btn--1 {
+  border: 2px solid @blue;
+  background-color: @white;
+  &:hover {
+    background-color: @white;
+  }
 }
 
 .comments--hidden {
@@ -13,7 +46,6 @@
   padding-top: 40px;
   padding-bottom: 103px;
 }
-
 
 .comments__author {
   .line(18px; 30px);
@@ -32,12 +64,12 @@
 @media @tablet-widths {
 
   .comments__block {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 35px;
-  padding-bottom: 60px;
-}
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
 
   .comments__author {
     .line(20px; 30px);
@@ -63,16 +95,66 @@
 
 @media @desktop-widths {
 
+  .comments {
+    position: relative;
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center top 70px;
+  }
+
+  .comments::before {
+    content: "";
+    width: 30px;
+    height: 70px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+
+    position: absolute;
+    left: 30px;
+    top: 49%;
+  }
+
+  .comments:hover::before {
+    opacity: 1;
+  }
+
+  .comments::after {
+    content: "";
+    width: 30px;
+    height: 70px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+
+    position: absolute;
+    right: 30px;
+    bottom: 35%;
+  }
+
+  .comments:hover::after {
+    opacity: 1;
+  }
+
+
+
+  .comments__wrap-btn {
+    display: none;
+  }
+
   .comments__block  {
     width: 695px;
     padding-top: 168px;
   }
 
-    .comments__author {
+  .comments__author {
     .line(24px; 30px);
   }
 
-    .comments__prof--hidden {
+  .comments__prof--hidden {
     .line(18px; 30px);
   }
 
