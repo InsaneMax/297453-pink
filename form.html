@@ -147,61 +147,52 @@
     <div class="main-descr">
       <p class="main-descr__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="main-descr__text--visible">Пожалуйста, заполните форму ниже:</span></p>
     </div>
-
     <form class="form-prize" method="post" action="https://echo.htmlacademy.ru/">
-
       <!-- Секция-1 -->
       <section class="form-prize__section">
         <div class="form-prize__wrap  form-prize__wrap--id">
           <div class="form-prize__cover">
-            <label class="form-prize__label  form-prize--red">Фамилия:</label>
-            <input class="form-prize__input" type="text" placeholder="Укажите фамилию*" required="">
+            <label class="form-prize__label  form-prize--red" for="second-name">Фамилия:</label>
+            <input class="form-prize__input" type="text" placeholder="Укажите фамилию*" id="second-name" required="">
           </div>
           <div class="form-prize__cover">
-            <label class="form-prize__label form-prize--red">Имя:</label>
-            <input class="form-prize__input" type="text" placeholder="Введите  ваше имя*"  required="">
+            <label class="form-prize__label form-prize--red" for="name">Имя:</label>
+            <input class="form-prize__input" type="text" placeholder="Введите  ваше имя*" id="name"  required="">
           </div>
           <div class="form-prize__cover">
-            <label class="form-prize__label form-prize--red">Отчество:</label>
-            <input class="form-prize__input" type="text" placeholder="Ну и отчество тоже">
+            <label class="form-prize__label form-prize--red" for="middle-name">Отчество:</label>
+            <input class="form-prize__input" type="text" placeholder="Ну и отчество тоже" id="middle-name">
           </div>
         </div>
       </section>
-
       <!--Секция-2 -->
       <section class="form-prize__section  form-prize__section--grey">
         <div class="form-prize__wrap  form-prize__wrap--achievements">
         <h2 class="form-prize__title">Ваши безбашенные достижения в путешествии</h2>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox" checked>
-            <label class="form-prize__label">Сделал селфи с акулой:</label>
-          </div>
-
-          <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox" checked>
-            <label class="form-prize__label">Обгорел на пляже:</label>
-          </div>
-
-          <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox">
-            <label class="form-prize__label">Видел Чака Норриса</label>
-
+            <input class="form-prize__input" type="checkbox" id="shark" checked>
+            <label class="form-prize__label" for="shark">Сделал селфи с акулой:</label>
           </div>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox">
-            <label class="form-prize__label">Накупил сувениров</label>
-          </div>
-
-          <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox" checked>
-            <label class="form-prize__label">Удержал башню</label>
-
+            <input class="form-prize__input" type="checkbox" id="burn" checked>
+            <label class="form-prize__label" for ="burn">Обгорел на пляже:</label>
           </div>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="checkbox">
-            <label class="form-prize__label">Разгромил отель</label>
+            <input class="form-prize__input" type="checkbox" id="warrior">
+            <label class="form-prize__label" for="warrior">Видел Чака Норриса</label>
           </div>
-
+          <div class="form-prize__cover">
+            <input class="form-prize__input" type="checkbox" id="present">
+            <label class="form-prize__label" for="present">Накупил сувениров</label>
+          </div>
+          <div class="form-prize__cover">
+            <input class="form-prize__input" type="checkbox" id="tower" checked>
+            <label class="form-prize__label" for ="tower">Удержал башню</label>
+          </div>
+          <div class="form-prize__cover">
+            <input class="form-prize__input" type="checkbox" id="hotel">
+            <label class="form-prize__label" for="hotel">Разгромил отель</label>
+          </div>
         </div>
       </section>
       <!--    Секция-3 -->
@@ -209,12 +200,12 @@
         <div class="form-prize__wrap  form-prize__wrap--info">
           <h2 class="form-prize__title  form-prize__title--hidden">Контактная информация</h2>
           <div class="form-prize__cover">
-            <label class="form-prize__label  form-prize--red">Номер телефона:</label>
-            <input class="form-prize__input" type="tel" placeholder="Номер, пожалуйста*">
+            <label class="form-prize__label  form-prize--red" for="phone">Номер телефона:</label>
+            <input class="form-prize__input" type="tel" pattern="[0-9]{10,11}" placeholder="Номер, пожалуйста*" id="phone"  autocomplete="on">
           </div>
           <div class="form-prize__cover">
-            <label class="form-prize__label  form-prize--red">Адрес почты:</label>
-            <input class="form-prize__input" type="email" placeholder="Введите почту*"  required="">
+            <label class="form-prize__label  form-prize--red" for="email">Адрес почты:</label>
+            <input class="form-prize__input" type="email" placeholder="Введите почту*" id="email" required="" autocomplete="on">
           </div>
             <div class="form-prize__icon  form-prize__icon--1"></div>
             <div class="form-prize__icon  form-prize__icon--2"></div>
@@ -225,16 +216,16 @@
         <div class="form-prize__wrap  form-prize__wrap--apps">
           <h2 class="form-prize__title">С какими приложениями путешествовали</h2>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="radio" checked>
-            <label class="">Pink для iOS</label>
+            <input class="form-prize__input" type="radio" id="ios" checked>
+            <label class="form-prize__label" for="ios">Pink для iOS</label>
           </div>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="radio">
-            <label class="form-prize__label">Pink для Android</label>
+            <input class="form-prize__input" type="radio" id="android">
+            <label class="form-prize__label" for="android">Pink для Android</label>
           </div>
           <div class="form-prize__cover">
-            <input class="form-prize__input" type="radio">
-            <label class="form-prize__label">Windows Phone</label>
+            <input class="form-prize__input" type="radio" id="windows-phone">
+            <label class="form-prize__label" for="windows-phone">Windows Phone</label>
           </div>
         </div>
       </section>
@@ -248,7 +239,6 @@
           </div>
         </div>
       </section>
-
       <!--       Секция-6 -->
       <section class="form-prize__section">
         <div class="form-prize__wrap  form-prize__wrap--button">
