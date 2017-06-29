@@ -99,6 +99,14 @@ input[type="checkbox"] + label {
   padding-left: 80px;
 }
 
+input[type="checkbox"] + label:hover::before {
+  border: 2px solid @blue;
+}
+
+input[type="checkbox"] + label:active::before {
+  border: 2px solid @red;
+}
+
 input[type="checkbox"] + label::before {
   content: "";
   width: 35px;
@@ -128,6 +136,14 @@ input[type="radio"] + label {
   padding-left: 80px;
 }
 
+input[type="radio"] + label:hover::before {
+  border: 2px solid @blue;
+}
+
+input[type="radio"] + label:active::before {
+  border: 2px solid @red;
+}
+
 
 input[type="radio"] + label::before {
   content: "";
@@ -154,7 +170,6 @@ input[type="radio"]:checked + label::after {
   top: 9px;
 }
 
-
 .form-prize__input placeholder {
   .line(18px; 30px;);
   color: @blue;
@@ -163,6 +178,10 @@ input[type="radio"]:checked + label::after {
 .form-prize__section textarea {
   .line(18px; 30px;);
   color: @blue;
+}
+
+.form-prize__section textarea:focus {
+  outline: 2px solid @red;
 }
 
 @media @tablet-widths {
@@ -250,7 +269,6 @@ input[type="radio"]:checked + label::after {
     left: 491px;
     top: 26px;
   }
-
 
   .form-prize__wrap--info .form-prize__icon--2 {
     background-image: url("../img/icon-mail.svg");

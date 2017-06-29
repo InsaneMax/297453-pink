@@ -6,24 +6,21 @@
 
 .form-filters__icons svg {
   fill: #8d949b;
+  opacity: 0.5;
 }
 
 .form-filters__icons svg:hover {
   fill: #8d949b;
-  opacity: 0.5;
+  opacity: 1;
 }
 
-.form-filters__icons .form-filters__icons--active,
-.form-filters__icons svg:active  {
+.form-filters__icons .form-filters__crop {
   fill: @red;
+  opacity: 1;
 }
 
-.form-filters__icons .form-filters__fill {
-  fill: #8d949b;
-}
-
-.form-filters__icons .form-filters__contrast {
-  fill: #8d949b;
+.form-filters__icons .form-filters__crop:hover {
+  fill: @red;
 }
 
 .form-filters__icons {
@@ -35,10 +32,6 @@
   margin: 0 auto;
 }
 
-.form-filters__wrap {
-
-}
-
 .range--2,
 .range--3 {
   display: none;
@@ -46,8 +39,12 @@
 
 @media @tablet-widths {
 
-  .form-filters__icons .form-filters__icons--active,
-  .form-filters__icons svg:active  {
+  .form-filters__icons .form-filters__icons--active {
+    fill: @red;
+    opacity: 1;
+  }
+
+  .form-filters__icons .form-filters__icons--active:hover {
     fill: @red;
   }
 
@@ -69,7 +66,6 @@
     flex-direction: column;
     height: 200px;
   }
-
 
   .form-filters__wrap {
     width: 220px;
