@@ -56,7 +56,14 @@ gulp.task("symbols", function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  })
+      gulp.watch("less/**/*.less", ["style"]);
+      gulp.watch("*.html", ["html:update"]);
   });
 
 gulp.task("html:copy", function() {
@@ -98,6 +105,3 @@ gulp.task("build", function(fn) {
   );
 });
 
-  gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html", ["html:update"]);
-});
