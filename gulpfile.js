@@ -101,6 +101,7 @@ gulp.task("build", function(fn) {
     "style",
     "images",
     "symbols",
+    "serve",
     fn
   );
 });
