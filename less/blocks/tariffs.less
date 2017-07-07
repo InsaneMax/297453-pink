@@ -2,6 +2,7 @@
   position: relative;
   width: 295%;
   transform: translateX(-49%);
+  margin-bottom: 25px;
 }
 
 .tariffs::before {
@@ -21,6 +22,7 @@
   .line(18px; 30px);
   font-weight: bold;
   padding: 18px 0;
+  text-transform: uppercase;
   &:nth-child(3) {
     border-right: 2px solid @white;
     border-left: 2px solid @white;
@@ -62,6 +64,37 @@
   height: 80px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
+}
+
+.tariffs__wrap-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 65px;
+  height: 28px;
+}
+
+.tariffs__btn {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.tariffs__btn--2 {
+  border: 3px solid @blue;
+  background-color: @white;
+  &:hover {
+    background-color: @white;
+  }
 }
 
 @media @tablet-widths {
