@@ -3,7 +3,13 @@
   width: 240px;
   padding: 30px 15px;
   margin: 10px 0;
-  border-bottom: 1px solid @dark-grey;
+  // border-bottom: 1px solid @dark-grey;
+}
+
+.range--1 {
+  padding: 4px 15px;
+  margin: 0;
+  margin-bottom: 65px;
 }
 
 
@@ -14,12 +20,12 @@
 
 .range__toogle {
   position: absolute;
-  top: 23px;
+  top: -2px;
   width: 10px;
   height: 10px;
   background-color: @grey;
   border-radius: 50%;
-  border: 3px solid @red;
+  border: 2px solid @red;
   cursor: pointer;
 }
 
@@ -45,6 +51,22 @@
     width: 200px;
     margin: 0 auto;
     margin-bottom: 10px;
+    padding: 30px 15px;
+    border-bottom: 1px solid @dark-grey;
+  }
+
+  .range--1 {
+  padding: 10px 15px 30px 15px;
+  margin: 10px 0;
+  }
+
+  .range__toogle {
+    top: 23px;
+  }
+
+  .range__toogle--1 {
+    left: 69%;
+    top: 4px;
   }
 }
 
@@ -53,5 +75,23 @@
     width: 300px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .range--1 {
+  margin: 10px 0;
+  }
+
+  .range__toogle--1 {
+    left: 26%;
+    top: 4px;
+  }
+
+
+  .range__toogle--2 {
+    left: 79%;
+  }
+
+  .range__toogle--3 {
+    left: 52%;
   }
 }
