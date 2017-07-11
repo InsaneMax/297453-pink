@@ -5,6 +5,24 @@
 
 .form-prize__section {
   padding: 40px 0;
+  &:first-child {
+    padding: 40px 0 20px 0;
+  }
+  &:nth-child(2) {
+    padding: 40px 0 12px 0;
+  }
+  &:nth-child(3) {
+    padding: 38px 0 20px 0;
+  }
+  &:nth-child(4) {
+    padding: 40px 0 0 0;
+  }
+  &:nth-child(5) {
+    padding: 15px 0 0 0;
+  }
+  &:nth-child(6) {
+    padding: 40px 0 0 0;
+  }
 }
 
 .form-prize__title {
@@ -43,6 +61,7 @@
 
 .form-prize__wrap--id .form-prize__cover {
   flex-direction: column;
+  padding: 0;
 }
 
 .form-prize__wrap--achievements .form-prize__cover {
@@ -51,14 +70,33 @@
   align-items: center;
 }
 
+.form-prize__wrap--achievements .form-prize__title {
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-prize__wrap--achievements .form-prize__label {
+  height: 52px;
+}
+
 .form-prize__wrap--info .form-prize__cover {
   flex-direction: column;
+  padding: 0;
 }
 
 .form-prize__wrap--apps .form-prize__cover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.form-prize__wrap--apps .form-prize__title {
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .form-prize__wrap--info .form-prize__title--hidden {
@@ -69,11 +107,24 @@
   flex-direction: column;
 }
 
+.form-prize__wrap--comment .form-prize__title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form-prize__obligatorily {
+  margin-top: 35px;
+}
+
+.form-prize__wrap--apps .form-prize__label {
+  height: 52px;
+}
+
 .form-prize__input {
   .line(18px; 30px;);
   color: @blue;
-  padding: 15px 5px;
-  margin-bottom: 15px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
 }
 
 .form-prize input:hover {
@@ -178,6 +229,8 @@ input[type="radio"]:checked + label::after {
 .form-prize__section textarea {
   .line(18px; 30px;);
   color: @blue;
+  padding: 15px 22px;
+  margin-bottom: 10px;
 }
 
 .form-prize__section textarea:focus {
@@ -186,12 +239,21 @@ input[type="radio"]:checked + label::after {
 
 @media @tablet-widths {
 
+  .form-prize {
+    margin-bottom: 50px;
+  }
+
+  .form-prize__cover {
+    padding: 15px 0;
+  }
+
   .form-prize__section--grey {
     background-color: @white;
   }
 
   .form-prize__section:nth-child(1) {
     order: 1;
+    padding: 70px 0 0 0;
   }
 
   .form-prize__section:nth-child(2) {
@@ -204,10 +266,13 @@ input[type="radio"]:checked + label::after {
 
   .form-prize__section:nth-child(4) {
     order: 2;
+    padding: 64px 0 0 0;
+    margin-bottom: 20px;
   }
 
   .form-prize__section:nth-child(5) {
     order:5;
+    padding: 43px 0 0 0;
   }
 
   .form-prize__section:nth-child(6) {
@@ -222,10 +287,19 @@ input[type="radio"]:checked + label::after {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 53px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form-prize__wrap--id  input {
     width: 525px;
+    margin-bottom: 2px;
+  }
+
+  .form-prize__wrap--id  label {
+    margin-right: 20px;
   }
 
   .form-prize__wrap--achievements {
@@ -243,7 +317,7 @@ input[type="radio"]:checked + label::after {
   }
 
   .form-prize__wrap--achievements label {
-    margin-left: 40px;
+    margin-left: 0;
   }
 
   .form-prize__wrap--info {
@@ -267,7 +341,7 @@ input[type="radio"]:checked + label::after {
     background-position: center;
     background-size: 20px;
     left: 491px;
-    top: 26px;
+    top: 51px;
   }
 
   .form-prize__wrap--info .form-prize__icon--2 {
@@ -276,23 +350,25 @@ input[type="radio"]:checked + label::after {
     background-position: center;
     background-size: 20px;
     left: 491px;
-    top: 165px;
+    top: 181px;
   }
 
   .form-prize__wrap--info .form-prize__cover {
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 36px;
   }
 
   .form-prize__wrap--info  input {
     width: 370px;
     padding-left: 15px;
     padding-right: 100px;
-  }
+    margin-bottom: 0;
+}
 
   .form-prize__wrap--info  label {
     align-self: flex-start;
-    margin-left: 120px;
+    margin-left: 80px;
   }
 
   .form-prize__wrap--apps {
@@ -301,19 +377,29 @@ input[type="radio"]:checked + label::after {
 
   .form-prize__wrap--apps .form-prize__cover {
     width: 500px;
-    justify-content: center;
+    padding: 12px 0;
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .form-prize__wrap--apps input {
     margin-right: 30px;
   }
 
+
+  .form-prize__wrap--apps label {
+    .line(18px;20px;);
+  }
+
   .form-prize__wrap--apps .form-prize__title {
     margin: 0 auto;
+    width: 330px;
   }
 
   .form-prize__wrap--comment {
     border: 2px solid @grey;
+    margin-bottom: 25px;
   }
 
   .form-prize__wrap--comment .form-prize__cover {
@@ -325,8 +411,12 @@ input[type="radio"]:checked + label::after {
     text-align: center;
   }
 
+.form-prize__obligatorily {
+  margin-top: 27px;
+}
+
   .form-prize__wrap--comment  textarea {
-    width: 500px;
+    width: 450px;
   }
 
   .form-prize__wrap--button {
@@ -346,7 +436,15 @@ input[type="radio"]:checked + label::after {
     padding: 0 30px;
     margin: 0 auto;
     margin-top: -8px;
+    margin-bottom: 40px;
     background-color: @white;
+    width: 370px;
+  }
+
+  .form-prize__wrap--comment  .form-prize__title {
+    width: 190px;
+    margin-top: -15px;
+    margin-bottom: 20px;
   }
 
 }
@@ -362,10 +460,19 @@ input[type="radio"]:checked + label::after {
 
   .form-prize__section:first-child {
     padding-bottom: 0;
+    padding-top: 88px;
+  }
+
+  .form-prize__section:nth-child(2) {
+    padding-top: 29px;
   }
 
   .form-prize__section:nth-child(3) {
     padding-bottom: 35px;
+  }
+
+  .form-prize__section:nth-child(4) {
+    padding-top: 77px;
   }
 
   .form-prize__section:nth-child(6) {
@@ -397,7 +504,8 @@ input[type="radio"]:checked + label::after {
   }
 
   .form-prize__wrap--apps .form-prize__title {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    width: 323px;
   }
 
   .form-prize__wrap--apps .form-prize__cover {
@@ -412,20 +520,21 @@ input[type="radio"]:checked + label::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .form-prize__wrap--achievements .form-prize__cover {
-    width: 295px;
+    width: 260px;
     margin: 10px 0;
+    padding: 0;
   }
 
   .form-prize__wrap--achievements .form-prize__title {
     text-align: center;
     display: inline-block;
-    padding: 29px 50px;
+    padding: 5px 50px;
     margin-right: 251px;
-    margin-top: -66px;
+    margin-top: -45px;
     width: auto;
   }
 
@@ -448,6 +557,11 @@ input[type="radio"]:checked + label::after {
   .form-prize__wrap--comment .form-prize__title {
     margin-top: -16px;
     padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .form-prize__wrap--comment .form-prize__cover {
+    padding-bottom: 33px;
   }
 
   .form-prize__wrap--info {
@@ -459,12 +573,14 @@ input[type="radio"]:checked + label::after {
   }
 
   .form-prize__wrap--info  label {
-    margin-left: 70px;
+    margin-left: 80px;
+    margin-top: 13px;
   }
 
   .form-prize__wrap--info  .form-prize__cover {
     padding: 45px 0;
     padding-bottom: 0;
+    margin-bottom: 13px;
   }
 
   .form-prize__wrap--id label {
