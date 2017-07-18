@@ -5,17 +5,6 @@
   margin-bottom: 25px;
 }
 
-.tariffs::before {
-  content: "";
-  width: 150px;
-  height: 96px;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 485px;
-}
-
 .tariffs__name {
   color: @white;
   background-color: @blue;
@@ -27,6 +16,17 @@
     border-right: 2px solid @white;
     border-left: 2px solid @white;
   }
+}
+
+.tariffs__name--hit::before {
+  content: "";
+  width: 150px;
+  height: 96px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 54.2%;
 }
 
 .tariffs__name span {
@@ -104,16 +104,16 @@
     transform: none;
   }
 
-  .tariffs::before {
-    content: "";
-    width: 150px;
-    height: 96px;
-    background-image: url("../img/bg-hit-tablet.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 319px;
-  }
+.tariffs__name--hit::before {
+  content: "";
+  width: 150px;
+  height: 96px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 51.5%;
+}
 
   .tariffs__name {
     padding: 9px 12px;
@@ -135,14 +135,16 @@
 
 @media @desktop-widths {
 
-  .tariffs::before {
-    content: "";
-    width: 150px;
-    height: 96px;
-    position: absolute;
-    top: 0;
-    left: 473px;
-  }
+.tariffs__name--hit::before {
+  content: "";
+  width: 150px;
+  height: 96px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50.3%;
+}
 
   .tariffs__name {
     padding: 17px 18px;
